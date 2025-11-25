@@ -1,4 +1,7 @@
-﻿const repoType = (process.env.REPOSITORY || "memory").toLowerCase()
+﻿import dotenv from "dotenv"
+dotenv.config() // garante que o .env foi carregado
+
+const repoType = (process.env.REPOSITORY || "memory").toLowerCase()
 
 let repo
 

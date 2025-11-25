@@ -1,7 +1,4 @@
-﻿import pkg from "pg"
-const { Pool } = pkg
-
-const pool = new Pool() // lê dados do .env automaticamente
+﻿import { pool } from "../db.js"
 
 export default {
   async list({ q, offset = 0, limit = 10, sort }) {
