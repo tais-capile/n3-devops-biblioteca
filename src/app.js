@@ -29,7 +29,7 @@ app.get('/db-test', async (req, res) => {
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'API biblioteca atualizada teste',
+    message: 'API biblioteca atualizada teste 1',
     uptime: process.uptime()
   })
 })
