@@ -27,7 +27,11 @@ app.get('/db-test', async (req, res) => {
 })
 
 app.get('/health', (req, res) => {
-  res.json({ status: 'ok', uptime: process.uptime() })
+  res.json({
+    status: 'ok',
+    message: 'API biblioteca atualizada teste',
+    uptime: process.uptime()
+  })
 })
 
 app.use('/api/livros', livrosRoutes)
