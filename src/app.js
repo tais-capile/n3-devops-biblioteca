@@ -29,7 +29,7 @@ app.get('/db-test', async (req, res) => {
 app.get('/health', (req, res) => {
   res.json({
     status: 'ok',
-    message: 'API Biblioteca atualizada via pipeline DevOps',
+    message: 'API biblioteca atualizada teste',
     uptime: process.uptime()
   })
 })
